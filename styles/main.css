@@ -16,7 +16,6 @@
 }
 
 body {
-  background-color: aquamarine;
   height: 1500px;
 }
 
@@ -46,13 +45,19 @@ body {
   padding: 19px;
 }
 
-.auth {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.text {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-variation-settings: 'wght' 700;
+  text-align: center;
+}
+
+.text-alternative {
+  font-family: 'Roboto-light', sans-serif;
+  color: #666666;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
 }
 
 .button {
@@ -75,19 +80,8 @@ body {
   position: relative;
 }
 
-.text {
-  font-family: 'Montserrat', sans-serif;
-  color: #ffffff;
-  font-variation-settings: 'wght' 700;
-  text-align: center;
-}
-
-.text-alternative {
-  font-family: 'Roboto-light', sans-serif;
-  color: #666666;
-  font-size: 14px;
-  line-height: 14px;
-  text-align: center;
+.text_transform_up {
+  text-transform: uppercase;
 }
 
 .button_size_s {
@@ -112,8 +106,13 @@ body {
   background-color: #FF4E50;
 }
 
-.text_transform_up {
-  text-transform: uppercase;
+.auth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .auth__login {
@@ -369,6 +368,13 @@ body {
   background-image: url("../images/Traveling-mobile.png");
 }
 
+.gallery__link {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
 .gallery__text {
   font-size: 22px;
   line-height: 26.82px;
@@ -426,6 +432,13 @@ body {
           justify-content: center;
 }
 
+.footer__link {
+  display: block;
+  text-decoration: none;
+  line-height: 26px;
+  margin: 0 5px;
+}
+
 .footer__text {
   color: #CCCCCC;
   font-size: 10px;
@@ -434,25 +447,11 @@ body {
   margin-top: 14px;
 }
 
-.footer__link {
-  display: block;
-  text-decoration: none;
-  line-height: 26px;
-  margin: 0 5px;
-}
-
 .footer__image {
   width: 110px;
   height: 24px;
   margin: 7px auto;
   background-image: url("../images/Footer.png");
-}
-
-.image__link {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
 }
 
 .clear-fix {
