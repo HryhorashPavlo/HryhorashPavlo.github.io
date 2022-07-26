@@ -1,3 +1,6 @@
+@import "../styles/colors";
+@import "../styles/fonts";
+
 * {
     margin: 0;
     padding: 0;
@@ -5,22 +8,624 @@
 }
 
 body {
-    height: 100vh;
+    background-color: aquamarine;
+    height: 1500px;
+}
+
+.header {
+    width: 320px;
+    height: 540px;
+    margin: 0 auto;
+    background-image: url('../images/Header-mobile.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+}
+
+.main {
+    width: 320px;    
+    margin: 0 auto;
+    padding: 1px 10px 40px;
+    background-color: #ffffff; 
+}
+
+.footer {
+    width: 320px; 
+    margin: 0px auto;
+    background-color: #ffffff;
+    border-top: 2px solid #FF4E50;
+    padding: 19px;
+}
+
+.text {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-variation-settings: 'wght' 700;
+    text-align: center;
+}
+
+.text-alternative {
+    font-family: 'Roboto-light', sans-serif;
+    color: #666666;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+}
+
+.button {
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid;
+    border-radius: 40px;
+    color: #ffffff;
+    font-variation-settings: 'wght' 400;
+    font-size: 14px;
+    line-height: 17.07px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.image {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 4px;
+    position: relative;
+}
+
+.text_transform_up {
+    text-transform: uppercase;
+}
+
+.button_size_s {
+    font-size: 10px;
+    line-height: 12.19px;
+    letter-spacing: 2px;
+}
+
+.button_fontweight_l {
+    font-variation-settings: 'wght' 700;
+}
+
+.button_border_off {
+    border: none;
+}
+
+.button_color_red {
+    color: #FF4E50;
+}
+
+.button_background_red {
+    background-color: #FF4E50;
+}
+
+.auth { 
+    display: flex;
+    justify-content: center;    
+}
+
+.auth__login {
+    width: 90px;
+    height: 36px;
+    padding: 10px;
+}
+
+.auth__signup {
+    width: 90px;
+    height: 36px;
+    padding: 8px;
+}
+
+.header__logo {
+    text-align: center;
+    margin-top: 97px;   
+    font-size: 20px;
+    line-height: 24.38px; 
+}
+
+.header__title {
+    margin-top: 26.5px;
+    font-size: 29px;
+    line-height: 36.57px;
+}
+
+.header__text {
+    margin-top: 5.5px;
+    font-size: 18px;
+    line-height: 24.5px;
+    color: #F7F3F2;
+}
+
+.header__button {
+    width: 280px;
+    height: 40px;
+    padding: 12px;
+    margin: 15px auto;
+    display: block;
+}
+
+.main__title {
+    color: #444444;
+    margin-top: 35px;  
+    font-size: 22px;
+    line-height: 26.82px;    
+}
+
+.slider {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 15px;
+    width: 300px;
+    height: 740px; 
+}
+
+.slider__block {
+    width: 300px;
+    height: 240px;
+    padding: 0 30px 16px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.slider__image1 {
+    background-image: url('../images/Slider\ 1\ image-mobile.png');
+}
+
+.slider__image2 {
+    background-image: url('../images/Slider\ 2\ image-mobile.png');
+}
+
+.slider__image3 {
+    background-image: url('../images/Slider\ 3\ image-mobile.png');
+}
+
+.slider__button { 
+    width: 70px;
+    height: 20px;
+    padding: 4px;
+    margin: 20px 0;
+}
+
+.slider__title {
+    font-size: 24px;
+    line-height: 14px;
+    text-align: start;
+    margin: 25px 0;
+}
+
+.slider__text {
+    color: #E3E3E3;  
+    font-size: 14px;
+    line-height: 14px;
+    text-align: start;
+}
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contacts__block {
+    width: 236px;
+    margin: 16px 32px 0;  
+}
+
+.contacts__image {
+    width: 120px;
+    height: 120px;    
+    margin: 0 auto;
+    border-radius: 50%;
+    position: relative; 
+}
+
+.image-contacts__avatar1 {
+    background-image: url('../images/Avatar\ 1.png');
+}
+
+.image-contacts__avatar2 {
+    background-image: url('../images/Avatar\ 2.png');
+}
+
+.image-contacts__avatar3 {
+    background-image: url('../images/Avatar\ 3.png');
+}
+
+.image-contacts__avatar4 {
+    background-image: url('../images/Avatar\ 4.png');
+}
+
+.contacts__icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+}
+
+.icon-contacts__music {
+    background-color: #FF4E50;
+    background-image: url('../images/music.png');
+}
+
+.icon-contacts__photo {
+    background-color: #FFA710;
+    background-image: url('../images/photo.png');
+}
+
+.icon-contacts__pen {
+    background-color: #19D4CA;
+    background-image: url('../images/pen.png');
+}
+
+.icon-contacts__airplane {
+    background-color: #667DF3;
+    background-image: url('../images/airplane.png');
+}
+
+.contacts__title {
+    margin-top: 17px;
+    color: #444444;
+    font-size: 14px;
+    line-height: 17.07px;
+}
+
+.contacts__text {
+    margin-top: 25px;
+}
+
+.contacts__button {
+    width: 280px;
+    height: 40px;
+    padding: 10px; 
+    margin: 36px auto 0;
+    display: block;
+}
+
+.gallery {
+    margin-top: 33px;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 120px 120px 120px 120px 120px 120px 120px;
+    row-gap: 10px;    
+}
+
+.gallery__block {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #000000;
-    background: -webkit-linear-gradient(to right, #434343, #000000);
-    background: linear-gradient(to right, #434343, #000000);
 }
 
-h1 {
-    font-size: 10vw;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #fefefe;
-    background: #00416A;    
-    background: -webkit-linear-gradient(to right, #FFE000, #799F0C, #00416A);    
-    background: linear-gradient(to right, #FFE000, #799F0C, #00416A);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.gallery__image_sport {
+    background-image: url('../images/Sport-mobile.png');
+}
+
+.gallery__image_health {
+    background-image: url('../images/Health-mobile.png');
+}
+
+.gallery__image_extreme {
+    background-image: url('../images/Extreme-mobile.png');
+}
+
+.gallery__image_games {
+    background-image: url('../images/Games-mobile.png');
+}
+
+.gallery__image_culture {
+    background-image: url('../images/Culture-mobile.png');
+}
+
+.gallery__image_relaxation {
+    background-image: url('../images/Relaxation-mobile.png');
+}
+
+.gallery__image_traveling {
+    background-image: url('../images/Traveling-mobile.png');
+}
+
+.gallery__link {
+    width: 100%;    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.gallery__text {
+    font-size: 22px;
+    line-height: 26.82px;
+}
+
+.search__title {
+    font-size: 18px;
+    margin-top: 9px;
+}
+
+.search-form__input {    
+    width: 280px;
+    height: 40px;
+    display: block;
+    margin: 15px auto 0;
+    padding: 14px;
+    border: 1px solid #D4D4D4;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+    border-radius: 3px;
+}
+
+.search__button {
+    width: 280px;
+    height: 40px;    
+    margin: 10px auto 0;
+    display: block;
+    padding: 12px;
+}
+
+.footer__logo {
+    font-size: 16px;
+    line-height: 19.5px;
+    color: #FF4E50;    
+    font-variation-settings: 'wght' 400;
+}
+
+.footer__title {
+    margin-top: 13px;
+    color: #444444;
+    font-size: 14px;
+    line-height: 17.07px;
+}
+
+.company-footer__menu {
+    width: 188px;
+    margin: 1px auto; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer__link {
+    display: block;
+    text-decoration: none;
+    line-height: 26px;
+    margin: 0 5px;
+}
+
+.footer__text {
+    color: #CCCCCC;
+    font-size: 10px;
+    line-height: 12.19px;
+    letter-spacing: 1px;
+    margin-top: 14px;
+}
+
+.footer__image {
+    width: 110px;
+    height: 24px;
+    margin: 7px auto;
+    background-image: url('../images/Footer.png');
+}
+
+.clear-fix {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        width: 768px;
+        height: 700px;
+        background-image: url('../images/Header.png');
+        padding: 40px 50px;
+    }
+
+    .main {
+        width: 768px;
+        padding: 1px 10px 100px;       
+    }
+
+    .footer {
+        width: 768px;
+        display: flex;
+        justify-content: space-between;
+        padding: 38px;
+    }
+
+    .auth {   
+        float: right;
+    }
+    
+    .header__logo {    
+        float: left;
+        margin-top: 6px;
+    }
+
+    .header__title {    
+        font-size: 52px;
+        line-height: 63.39px;        
+        width: 470px;
+        margin: 147.5px auto 0;
+    }
+
+    .header__text {
+        font-size: 24px;
+        margin-top: 28.5px;
+    }
+
+    .header__button {
+        width: 225px;
+        margin-top: 33px;
+    }
+
+    .main__title {
+        margin-top: 94px;
+    }
+
+    .slider {   
+        flex-direction: row;    
+        margin-top: 35px;
+        width: 748px;
+        height: 400px;
+    }
+
+    .slider__block {
+        width: 236px;
+        height: 400px;
+        padding: 0 20px 16px;
+        background-position: left;
+    }
+
+    .slider__image1 {
+        background-image: url('../images/Slider\ 1\ image.png');
+    }
+
+    .slider__image2 {
+        background-image: url('../images/Slider\ 2\ image.png');
+    }
+
+    .slider__image3 {
+        background-image: url('../images/Slider\ 3\ image.png');
+    }
+
+    .contacts {
+        width: 492px;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    .contacts__block {
+        margin: 35px 0 0;
+    }
+
+    .contacts__button {
+        width: 180px;
+    }
+
+    .gallery {    
+        grid-template-columns: 236px 236px 236px;
+        grid-template-rows: 310px 310px 310px;
+        gap: 20px;
+    }
+
+    .gallery__image_sport {
+        background-image: url('../images/Sport.png');
+    }
+
+    .gallery__image_health {
+        background-image: url('../images/Health.png');
+    }
+    
+    .gallery__image_extreme {
+        background-image: url('../images/Extreme.png');
+    }
+    
+    .gallery__image_games {
+        background-image: url('../images/Games.png');
+    }
+    
+    .gallery__image_culture {
+        background-image: url('../images/Culture.png');
+        grid-column: 2 / 4;
+    }
+    
+    .gallery__image_relaxation {
+        background-image: url('../images/Relaxation.png');
+        grid-column: 1 / 3;
+    }
+    
+    .gallery__image_traveling {
+        background-image: url('../images/Traveling.png');
+    }
+
+    .search__title {   
+        margin-top: 43px;
+    }
+
+    .search-form {
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+    }
+
+    .search-form__input {    
+        width: 299px;
+        margin: 0 5px;
+    }
+
+    .search__button {
+        width: 172px;
+        margin: 0 5px;
+    }
+
+    .footer__title {
+        margin-top: 0;
+        text-align: start;
+    }
+
+    .footer__link {
+        margin: 0;
+    }
+
+    .footer__text {
+        margin-top: 0;
+    }
+
+    .company-footer__menu {
+        width: inherit;
+        margin: 11px 0;         
+        display: flex;
+        flex-direction: column;        
+        align-items: flex-start;       
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .header {
+        width: 1440px;
+        height: 700px;
+        background-image: url('../images/Header.png');
+        padding: 40px 250px;
+    }
+
+    .main {
+        width: 1440px;  
+        padding: 1px 250px 100px;      
+    }
+
+    .footer {
+        width: 1440px;  
+        padding: 38px 250px;  
+    }
+
+    .main__title {
+        font-size: 26px;
+        line-height: 31.69px;  
+    }
+
+    .slider {      
+        width: 940px;    
+    }
+
+    .slider__block {
+        width: 300px;
+        padding: 0 25px 21px;  
+    }
+
+    .contacts {
+        width: 941px;
+    }
+
+    .contacts__block {
+        width: 221px;
+    }
+
+    .gallery {    
+        grid-template-columns: 300px 300px 300px;
+    }
 }
