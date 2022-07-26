@@ -250,6 +250,37 @@ body {
   position: relative;
 }
 
+.contacts__icon {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+}
+
+.contacts__title {
+  margin-top: 17px;
+  color: #444444;
+  font-size: 14px;
+  line-height: 17.07px;
+}
+
+.contacts__text {
+  margin-top: 25px;
+}
+
+.contacts__button {
+  width: 280px;
+  height: 40px;
+  padding: 10px;
+  margin: 36px auto 0;
+  display: block;
+}
+
 .image-contacts__avatar1 {
   background-image: url("../images/Avatar 1.png");
 }
@@ -264,18 +295,6 @@ body {
 
 .image-contacts__avatar4 {
   background-image: url("../images/Avatar 4.png");
-}
-
-.contacts__icon {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 4px solid #ffffff;
-  border-radius: 50%;
 }
 
 .icon-contacts__music {
@@ -296,25 +315,6 @@ body {
 .icon-contacts__airplane {
   background-color: #667DF3;
   background-image: url("../images/airplane.png");
-}
-
-.contacts__title {
-  margin-top: 17px;
-  color: #444444;
-  font-size: 14px;
-  line-height: 17.07px;
-}
-
-.contacts__text {
-  margin-top: 25px;
-}
-
-.contacts__button {
-  width: 280px;
-  height: 40px;
-  padding: 10px;
-  margin: 36px auto 0;
-  display: block;
 }
 
 .gallery {
@@ -385,7 +385,7 @@ body {
   margin-top: 9px;
 }
 
-.search-form__input {
+.search__input {
   width: 280px;
   height: 40px;
   display: block;
@@ -419,19 +419,6 @@ body {
   line-height: 17.07px;
 }
 
-.company-footer__menu {
-  width: 188px;
-  margin: 1px auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .footer__link {
   display: block;
   text-decoration: none;
@@ -452,6 +439,19 @@ body {
   height: 24px;
   margin: 7px auto;
   background-image: url("../images/Footer.png");
+}
+
+.company-footer__menu {
+  width: 188px;
+  margin: 1px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .clear-fix {
@@ -588,7 +588,7 @@ body {
             justify-content: center;
     margin-top: 25px;
   }
-  .search-form__input {
+  .search__input {
     width: 299px;
     margin: 0 5px;
   }
